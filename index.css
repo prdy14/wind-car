@@ -1,0 +1,106 @@
+.anime {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 50vh;
+}
+
+.circle {
+ height: 150px;
+ width: 150px;
+ border-radius: 50%;
+ background-color: brown;
+ position: absolute;
+}
+
+.stick {
+ position: absolute;
+ height: 40px;
+ width: 400px;
+ background-color: yellow;
+ border-radius: 15px;
+}
+
+.stick1 {
+ animation: anim 8s linear 0s infinite;
+}
+
+.stick2 {
+ animation: anim1 8s linear 0s infinite;
+ background-color: rgb(143, 74, 28);
+ transform: rotate(90deg);
+}
+
+.road {
+ height: 200px;
+ width: 95vw;
+ background-color: rgb(215, 219, 216);
+ margin: 20px;
+}
+
+.car1 {
+ animation: race 10s linear 0s infinite;
+}
+
+.car2 {
+ animation: race 10s ease-out 0s infinite;
+}
+
+.car3 {
+ animation: race 10s ease-in-out 0s infinite;
+}
+
+@keyframes race {
+ 0% {
+  transform: translateX(0%);
+ }
+
+ 100% {
+  transform: translateX(78vw);
+ }
+
+}
+
+@keyframes anim {
+ 0% {
+  transform: rotate(0deg);
+ }
+
+ 25% {
+  transform: rotate(90deg);
+ }
+
+ 50% {
+  transform: rotate(180deg);
+ }
+
+ 75% {
+  transform: rotate(270deg);
+ }
+
+ 100% {
+  transform: rotate(360deg);
+ }
+}
+
+@keyframes anim1 {
+ 0% {
+  transform: rotate(90deg);
+ }
+
+ 25% {
+  transform: rotate(180deg);
+ }
+
+ 50% {
+  transform: rotate(270deg);
+ }
+
+ 75% {
+  transform: rotate(360deg);
+ }
+
+ 100% {
+  transform: rotate(450deg);
+ }
+}
